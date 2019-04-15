@@ -12,7 +12,7 @@ To configure your project, implement the following steps in Google Sheets:
 2. Click on the `Public View` link.
 3. Find the Zillow Property ID number in the URL— it will have a format similar to: `...homes/for_sale/48000000_zpid/47.63...`. (In this example, the Property ID is `48000000`.) 
 4. Create a Zillow Web Services ID by visiting [Zillow's API Overview page](https://www.zillow.com/howto/api/APIOverview.htm).
-5. Follow the link to `Get a Zillow Web Services ID (ZWSID) to use when making your API calls` and follow the steps.
+5. Follow the link to `Get a Zillow Web Services ID (ZWSID)` and follow the steps.
 6. Open the Tiller Google-Sheets spreadsheet you'd like to integrate with Zillow.
 7. Click on Tools -> Script editor to open the spreadsheet's bound scripts.
 8. Copy the contents of `zillow.js` from this repo into the Google Sheets script editor.
