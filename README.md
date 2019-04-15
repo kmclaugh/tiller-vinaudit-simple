@@ -3,12 +3,12 @@ A simple script to retrieve &amp; write Zillow Zestimates® to Tiller-enabled sp
 
 The tiller-zillow-simple script is a simple Google Apps Script to scrape Zillow Zestimates® and insert them into the Balance History sheet of Tiller-enabled spreadsheets. This workflow is especially useful for tracking net worth. 
 
-Visit [Tiller HQ](tillerhq.com) to learn more about Tiller.
+Visit [Tiller HQ](https://tillerhq.com) to learn more about Tiller.
 
 ## Setting Up Your Project
 
 To configure your project, implement the following steps in Google Sheets:
-1. Visit [Zillow](zillow.com) and browse to the property you'd like to link.
+1. Visit [Zillow](https://zillow.com) and browse to the property you'd like to link.
 2. Click on the `Public View` link.
 3. Find the Zillow Property ID number in the URL— it will have a format similar to: `...homes/for_sale/48000000_zpid/47.63...`. (In this example, the Property ID is `48000000`.) 
 4. Create a Zillow Web Services ID by visiting [Zillow's API Overview page](https://www.zillow.com/howto/api/APIOverview.htm).
