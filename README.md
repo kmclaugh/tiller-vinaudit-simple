@@ -6,7 +6,7 @@ The tiller-zillow-simple script is a simple Google Apps Script to scrape Zillow 
 To configure your project, implement the following steps in Google Sheets:
 1. Visit [Zillow](zillow.com) and browse to the property you'd like to link.
 2. Click on the `Public View` link.
-3. Find the Zillow Property ID number in the URL— it will have a format similar to: `...homes/for_sale/48000000_zpid/47.63...`. (In this example, the Property ID is `48000000`.) Save this number.
+3. Find the Zillow Property ID number in the URL— it will have a format similar to: `...homes/for_sale/48000000_zpid/47.63...`. (In this example, the Property ID is `48000000`.) 
 4. Create a Zillow Web Services ID by visiting [Zillow's API Overview page](https://www.zillow.com/howto/api/APIOverview.htm).
 5. Follow the link to `Get a Zillow Web Services ID (ZWSID) to use when making your API calls` and follow the steps.
 6. Open the Tiller Google-Sheets spreadsheet you'd like to integrate with Zillow.
