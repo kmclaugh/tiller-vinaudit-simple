@@ -5,7 +5,7 @@ var zwsid = 'X1-11111111111111_11111';
 // Note: to update values for multiple properties, set your ZPID like this '[11111111, 22222222, 33333333]'
 var zpid = '11111111';
 
-function zestimateInsertUpdate() {
+function zestimateInsert() {
   // load the moment library for date/time handling
   eval(UrlFetchApp.fetch('https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js').getContentText());
 
