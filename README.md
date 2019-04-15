@@ -26,6 +26,7 @@ NOTE: This is a simple script for intermediate users with very lightweight error
 Most users will configure only a single Zillow Property ID like this:
 
 `var zpid = '11111111';`
+
 If you'd like to run the script against multiple properties, the `zpid` can be configured as an array:
 
 `var zpid = '[11111111, 22222222, 33333333]'`
