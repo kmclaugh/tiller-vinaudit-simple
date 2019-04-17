@@ -1,9 +1,10 @@
 # Tiller Zillow (Simple) Automation
-A simple script to retrieve &amp; write Zillow Zestimates® to Tiller-enabled spreadsheets
-
 The tiller-zillow-simple script is a simple Google Apps Script to scrape Zillow Zestimates® and insert them into the Balance History sheet of Tiller-enabled spreadsheets. This workflow is especially useful for tracking net worth. 
 
 Visit [Tiller HQ](https://tillerhq.com) to learn more about Tiller.
+
+## Adivsory
+*This simple script is designed for intermediate users and includes only lightweight error checking. We hope it meets your needs out of the box, but further tweaks may be required to get it working in your environment. As a one-off Tiller-Labs release, Tiller offers no warranties or support for this solution.*
 
 ## Setting Up Your Project
 
@@ -15,16 +16,15 @@ To configure your project, implement the following steps in Google Sheets:
 5. Follow the link to `Get a Zillow Web Services ID (ZWSID)` and follow the steps.
 6. Open the Tiller Google-Sheets spreadsheet you'd like to integrate with Zillow.
 7. Click on Tools -> Script editor to open the spreadsheet's bound scripts.
-8. Copy the contents of `zillow.js` from this repo into the Google Sheets script editor.
+8. Copy the contents of [zillow.js](tiller-zillow-simple/master/zillow.js) from this repo into the Google Sheets script editor.
 9. Set the `zwsid` variable (at the start of the code) equal to your new Zillow Web Services ID.
 10. Set the `zpid` variable (at the start of the code) equal to your new Zillow Property ID.
 11. Save the script file.
 12. Click on the Set Function dropdown in the control bar and select the `zestimateInsert` function.
 13. Click the run/play button.
+14. In the 'Authorization required' window that appears, click 'Review Permissions', then authenticate and allow the script to run.
 
 If you've completed all the steps successfully, you should have a new entry in your Balance History reflecting the Zestimate® of the linked property.
-
-NOTE: This is a simple script for intermediate users with very lightweight error checking. We hope it meets your needs out of the box, but further tweaks may be required to get it working in your environment.
 
 ## Reporting on Multiple Properties
 Most users will configure only a single Zillow Property ID like this:
@@ -34,3 +34,9 @@ Most users will configure only a single Zillow Property ID like this:
 If you'd like to run the script against multiple properties, the `zpid` can be configured as an array:
 
 `var zpid = '[11111111, 22222222, 33333333]'`
+
+## Taking This Solution Further
+
+Consider adding:
+* [onOpen()](https://developers.google.com/apps-script/guides/triggers/#onopene) to create a menu item to execute an update
+* [Triggers](https://developers.google.com/apps-script/guides/triggers/) to automate script execution
