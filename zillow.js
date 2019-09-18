@@ -53,7 +53,8 @@ function zestimateInsert() {
       safeSetVal('balance', zestimate.amount);
       safeSetVal('account', 'Zillow: ' + zestimate.street + ', ' + zestimate.city + ', ' + zestimate.state);
       safeSetVal('account #', zestimate.zpid);
-      safeSetVal('index', 'Zestimate®: ' + zestimate.zpid);
+      safeSetVal('account id', 'zestimate-' + zestimate.zpid);
+      safeSetVal('index', zestimate.zpid);
       safeSetVal('institution', 'Zillow - API');
       safeSetVal('type', 'PROPERTY');
       safeSetVal('class', 'Asset');
