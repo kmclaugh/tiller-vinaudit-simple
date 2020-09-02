@@ -11,9 +11,7 @@ Visit [Tiller HQ](https://tillerhq.com) to learn more about Tiller.
 
 _This simple script is designed for intermediate users and includes only
 lightweight error checking. We hope it meets your needs out of the box, but
-further tweaks may be required to get it working in your environment. As a
-one-off Tiller-Labs release, Tiller offers no warranties or support for this
-solution._
+further tweaks may be required to get it working in your environment.
 
 ## Setting Up Your Project
 
